@@ -1,0 +1,16 @@
+{
+  "name": "sha256-t2",
+  "version": "1.0.0",
+  "description": "t2 segurança",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Dall'Agnol Deconto",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
