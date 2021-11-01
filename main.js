@@ -2,6 +2,14 @@ import { readFileSync, statSync } from 'fs';
 import crypto from 'crypto';
 import path from 'path';
 
+//
+// Created by Guilherme Deconto on 10/26/21.
+// Copyright © 2021 Guilherme Deconto. All rights reserved.
+//
+// Dado um arquivo de video (mp4) passado por parâmetro para a aplicação,
+// divida-o em partes de tamanho máximo de 1MB e calcule o hash do arquivo e imprima na tela o valor do hash H0.
+// Para calcular o hash do arquivo, utiliza-se a função SHA-256 do módulo crypto.
+//
 
 function main() {
     //Get file path
@@ -29,8 +37,8 @@ function getFilePath(){
     // Retrieve directory path
     const __dirname = path.resolve();
     // Return path to file
-    //return process.argv[2] ? process.argv[2] : path.join(__dirname, "./FuncoesResumo-HashFunctions.mp4");
-    return process.argv[2] ? process.argv[2] : path.join(__dirname, "./FuncoesResumo-SHA1.mp4");
+    return process.argv[2] ? process.argv[2] : path.join(__dirname, "./FuncoesResumo-HashFunctions.mp4");
+    //return process.argv[2] ? process.argv[2] : path.join(__dirname, "./FuncoesResumo-SHA1.mp4");
 }
 
 function getChunksQuantity(CHUNK_SIZE, filePath) {
